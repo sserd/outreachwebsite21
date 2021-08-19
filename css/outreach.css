@@ -15,3 +15,28 @@
 .montserrat h1,.montserrat h2,.montserrat h3,.montserrat h4,
 .montserrat h5,.montserrat h6{font-family:'Montserrat', sans-serif !important;
   font-weight:700 !important;}
+
+ .customtab.nav-pills .nav-link {
+    border-radius: 0 !important;
+    position: relative;
+    padding: 20px 30px;
+    color: #5A55A3;
+    border:1px solid #dee2e6 !important;
+}
+ 
+.customtab.nav-pills .nav-link.active {
+ background: #5A55A3;
+ color: #fff;
+}
+
+.customtab.nav-pills .nav-link.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #5A55A3;
+}
