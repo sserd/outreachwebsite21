@@ -9,8 +9,8 @@ $php = array(
 "6"=>array(" 16-10-2021","Webinar 6 - Future Mission to Space","Workshop 6 - Entreprenueral Endevours","left"),
 
 );
-for ($x = 1; $x <= 5; $x++) {
-
+for ($x = 8; $x <= 23; $x++) {
+/*
 echo '<div class="timeline__elem timeline__elem--'. $php[$x][3].'">
 <div class="timeline__date">
 <span class="timeline__date-month">Day</span>
@@ -33,5 +33,8 @@ echo '<div class="timeline__elem timeline__elem--'. $php[$x][3].'">
 </div>
 </div>
 </div>';
+*/
 
+echo '<a href="img/gallery/'.$x.'.webp" class="fancybox mt-2" rel="gallery1">   <img src="img/gallery/'.$x.'.webp" alt="Image" class="img-fluid"></a>
+';
 }
