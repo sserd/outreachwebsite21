@@ -41,3 +41,6 @@
   border-left: 10px solid #5A55A3;
 }
 
+ a.resetall{border:none !important; padding: 0;}
+a:hover.resetall,a::before.resetall  {background:none !important;border: none;}
+a:hover::before.resetall{    transform: scaleY(0) !important;}
