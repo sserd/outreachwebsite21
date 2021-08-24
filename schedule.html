@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/outreach.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Poppins:200,300,400,500,500i,600,700,800&display=swap" rel="stylesheet">
     <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
     
         <title>Schedule
  | SSERD Outreach Program</title>
@@ -213,12 +213,32 @@
       </div>
       
  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-  <div class="content">
-    <div id='calendar'></div>
-  </div>
+<div class="row">
+  <div class="col-3">
+    <div class="nav flex-column customtab nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="!#" data-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">School Students Program  </a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="!#" data-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Teachers Program    </a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="!#" data-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">University Students Program</a>
       </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 </div>
 </div>
@@ -250,81 +270,7 @@
       <script src="js/jquery.scrollUp.min.js"></script>
           <script src="js/page.js"></script>
 <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <script src='fullcalendar/packages/core/main.js'></script>
-    <script src='fullcalendar/packages/interaction/main.js'></script>
-    <script src='fullcalendar/packages/daygrid/main.js'></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: [ 'interaction', 'dayGrid' ],
-      defaultDate: '2020-02-12',
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2020-02-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2020-02-07',
-          end: '2020-02-10'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2020-02-09T16:00:00'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2020-02-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2020-02-11',
-          end: '2020-02-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2020-02-12T10:30:00',
-          end: '2020-02-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2020-02-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2020-02-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2020-02-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2020-02-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2020-02-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2020-02-28'
-        }
-      ]
-    });
-
-    calendar.render();
-  });
-
-    </script>
+  
 
   </body>
 </html>
